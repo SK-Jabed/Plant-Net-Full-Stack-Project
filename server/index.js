@@ -25,12 +25,12 @@ const verifyToken = async (req, res, next) => {
   const token = req.cookies?.token;
 
   if (!token) {
-    return res.status(401).send({ message: "unauthorized access" });
+    return res.status(401).send({ message: "Unauthorized Access" });
   }
   jwt.verify(token, process.env.ACCESS_TOKEN_SECRET, (err, decoded) => {
     if (err) {
       console.log(err);
-      return res.status(401).send({ message: "unauthorized access" });
+      return res.status(401).send({ message: "Unauthorized Access" });
     }
     req.user = decoded;
     next();
@@ -63,6 +63,7 @@ async function run() {
         })
         .send({ success: true });
     });
+
     // Logout
     app.get("/logout", async (req, res) => {
       try {
@@ -90,9 +91,9 @@ async function run() {
 run().catch(console.dir);
 
 app.get("/", (req, res) => {
-  res.send("Hello from plantNet Server..");
+  res.send("Hello from PlantNet Server...");
 });
 
 app.listen(port, () => {
-  console.log(`plantNet is running on port ${port}`);
+  console.log(`PlantNet Server is running on port ${port}`);
 });
