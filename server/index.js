@@ -50,7 +50,7 @@ const client = new MongoClient(uri, {
 });
 async function run() {
   try {
-    // Generate jwt token
+    // Generate JWT Token
     app.post("/jwt", async (req, res) => {
       const email = req.body;
       const token = jwt.sign(email, process.env.ACCESS_TOKEN_SECRET, {
@@ -90,6 +90,7 @@ async function run() {
   }
 }
 run().catch(console.dir);
+
 
 app.get("/", (req, res) => {
   res.send("Hello from PlantNet Server...");
