@@ -65,7 +65,7 @@ async function run() {
         .send({ success: true });
     });
 
-    // Logout
+    // Logout Functionality of JWT Token
     app.get("/logout", async (req, res) => {
       try {
         res
