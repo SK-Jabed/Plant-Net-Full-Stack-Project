@@ -15,7 +15,7 @@ const PlantDetails = () => {
   return (
     <Container>
       <Helmet>
-        <title>Money Plant</title>
+        <title>PlantNet | Money Plant</title>
       </Helmet>
       <div className="mx-auto flex flex-col lg:flex-row justify-between w-full gap-12">
         {/* Header */}
