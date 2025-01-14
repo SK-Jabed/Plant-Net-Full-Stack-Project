@@ -5,7 +5,7 @@ const MyOrders = () => {
   return (
     <>
       <Helmet>
-        <title>PlantNet | My Orders</title>
+        <title>PlantNet | My Orders</title>                           
       </Helmet>
       <div className="container mx-auto px-4 sm:px-8">
         <div className="py-8">
