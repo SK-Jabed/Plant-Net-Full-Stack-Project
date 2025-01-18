@@ -3,8 +3,8 @@ import { Helmet } from "react-helmet-async";
 import coverImg from "../../../assets/images/cover.jpg";
 const Profile = () => {
   const { user } = useAuth();
-
   console.log(user);
+  
   return (
     <div className="flex justify-center items-center h-screen">
       <Helmet>

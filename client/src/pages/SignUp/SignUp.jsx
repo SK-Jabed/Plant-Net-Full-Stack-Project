@@ -8,6 +8,7 @@ const SignUp = () => {
   const { createUser, updateUserProfile, signInWithGoogle, loading } =
     useAuth();
   const navigate = useNavigate();
+  
   // form submit handler
   const handleSubmit = async (event) => {
     event.preventDefault();
