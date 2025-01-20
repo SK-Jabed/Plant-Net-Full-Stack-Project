@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 const Heading = ({ title, subtitle, center }) => {
   return (
     <div className={center ? "text-center" : "text-start"}>
