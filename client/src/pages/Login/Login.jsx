@@ -12,7 +12,8 @@ const Login = () => {
   const from = location?.state?.from?.pathname || "/";
   if (user) return <Navigate to={from} replace={true} />;
   if (loading) return <LoadingSpinner />;
-  // form submit handler
+
+  // Form submit handler
   const handleSubmit = async (event) => {
     event.preventDefault();
     const form = event.target;
